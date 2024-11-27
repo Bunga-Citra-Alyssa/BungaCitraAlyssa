@@ -1,0 +1,638 @@
+/* General Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7fb; /* Light pink background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e1c6f0; /* Soft Purple */
+    position: relative;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #b46dcb; /* Lavender Purple */
+    text-decoration: none;
+}
+
+header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar li {
+    margin-right: 30px;
+}
+
+header .navbar li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #7e6cbb; /* Soft Purple */
+    transition: color 0.3s;
+}
+
+header .navbar li a:hover {
+    color: #b46dcb;
+}
+
+header .top-btn .nav-btn {
+    background-color: #f4c6da; /* Soft Pink */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header .top-btn .nav-btn:hover {
+    background-color: #e79db0; /* Lighter soft pink */
+}
+
+/* Home Section */
+.home {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 100px 40px;
+    background-color: #fff;
+    color: #333;
+}
+
+.home .home-content {
+    max-width: 50%;
+}
+
+.home h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #b46dcb; /* Lavender Purple */
+    margin-bottom: 10px;
+}
+
+.home h3 {
+    font-size: 1.6rem;
+    color: #7e6cbb; /* Soft Purple */
+}
+
+.home p {
+    font-size: 1.1rem;
+    margin-top: 20px;
+    line-height: 1.8;
+    color: #666;
+}
+
+.home .social-media a {
+    margin-right: 15px;
+    font-size: 1.8rem;
+    color: #b46dcb;
+    transition: color 0.3s;
+}
+
+.home .social-media a:hover {
+    color: #f4c6da; /* Soft Pink */
+}
+
+.home-img img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 80px 40px;
+    background-color: #f9f7fb; /* Light Pink */
+}
+
+.about .about-img img {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.about .about-content {
+    padding-left: 40px;
+    max-width: 50%;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b46dcb;
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 1.6rem;
+    color: #7e6cbb;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+}
+
+.about .btn {
+    display: inline-block;
+    margin-top: 20px;
+    background-color: #f4c6da; /* Soft Pink */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.about .btn:hover {
+    background-color: #e79db0; /* Lighter soft pink */
+}
+
+/* Portfolio Section */
+.portofolio {
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.portofolio h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b46dcb;
+    margin-bottom: 40px;
+}
+
+.portofolio .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.portofolio .row img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.portofolio .main-row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.portofolio .row-text h5 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #7e6cbb;
+    margin-bottom: 5px;
+}
+
+.portofolio .row-icon {
+    font-size: 1.8rem;
+    color: #b46dcb;
+    margin-bottom: 5px;
+}
+
+.portofolio h4 {
+    font-size: 1.5rem;
+    color: #b46dcb;
+}
+
+/* Contact Section */
+.contact {
+    padding: 80px 40px;
+    background-color: #f9f7fb;
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b46dcb;
+    margin-bottom: 40px;
+}
+
+.contact form {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.contact .input-box {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.contact .input-box input,
+.contact textarea {
+    width: 48%;
+    padding: 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    color: #333;
+}
+
+.contact textarea {
+    width: 100%;
+    height: 150px;
+    resize: none;
+}
+
+.contact .btn {
+    background-color: #f4c6da; /* Soft Pink */
+    color: #fff;
+    padding: 12px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    margin-top: 20px;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+
+.contact .btn:hover {
+    background-color: #e79db0; /* Lighter soft pink */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e1c6f0; /* Soft Purple */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .social a {
+    margin-right: 20px;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #f4c6da; /* Soft Pink */
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* General Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7fb; /* Light Pink Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e1c6f0; /* Soft Purple */
+    position: relative;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #b46dcb; /* Lavender Purple */
+    text-decoration: none;
+}
+
+header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar li {
+    margin-right: 30px;
+}
+
+header .navbar li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #7e6cbb; /* Soft Purple */
+    transition: color 0.3s;
+}
+
+header .navbar li a:hover {
+    color: #b46dcb;
+}
+
+header .top-btn .nav-btn {
+    background-color: #f4c6da; /* Soft Pink */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header .top-btn .nav-btn:hover {
+    background-color: #e79db0; /* Lighter soft pink */
+}
+
+/* About Section */
+.about {
+    display: flex;
+    padding: 80px 40px;
+    background-color: #fff;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-img img {
+    width: 50%;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.about .about-content {
+    padding-left: 40px;
+    max-width: 50%;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #b46dcb; /* Lavender Purple */
+    margin-bottom: 20px;
+}
+
+.about h3 {
+    font-size: 1.6rem;
+    color: #7e6cbb; /* Soft Purple */
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.about .btn {
+    display: inline-block;
+    background-color: #f4c6da; /* Soft Pink */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.about .btn:hover {
+    background-color: #e79db0; /* Lighter soft pink */
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e1c6f0; /* Soft Purple */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .social a {
+    margin-right: 20px;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #f4c6da; /* Soft Pink */
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* General Reset and Basic Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f7fb; /* Soft Pink Background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #e1c6f0; /* Soft Purple */
+    position: relative;
+}
+
+header .logo {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #b46dcb; /* Lavender Purple */
+    text-decoration: none;
+}
+
+header .navbar {
+    display: flex;
+    list-style: none;
+}
+
+header .navbar li {
+    margin-right: 30px;
+}
+
+header .navbar li a {
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: #7e6cbb; /* Soft Purple */
+    transition: color 0.3s;
+}
+
+header .navbar li a:hover {
+    color: #b46dcb;
+}
+
+header .top-btn .nav-btn {
+    background-color: #f4c6da; /* Soft Pink */
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+header .top-btn .nav-btn:hover {
+    background-color: #e79db0; /* Lighter soft pink */
+}
+
+/* Portfolio Section */
+.portofolio {
+    padding: 80px 40px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.portofolio .heading {
+    font-size: 2.5rem;
+    color: #b46dcb; /* Soft Purple */
+    margin-bottom: 40px;
+}
+
+.portofolio .heading span {
+    color: #f4c6da; /* Soft Pink */
+}
+
+.portofolio .portofolio-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.portofolio .row {
+    position: relative;
+    background-color: #f4c6da; /* Soft Pink */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.portofolio .row:hover {
+    transform: translateY(-10px); /* Hover effect */
+}
+
+.portofolio .row img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.portofolio .main-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.portofolio .row-text h5 {
+    font-size: 1.2rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.portofolio .row-icon {
+    font-size: 1.5rem;
+    color: #7e6cbb; /* Soft Purple */
+}
+
+.portofolio h4 {
+    font-size: 1.5rem;
+    color: #7e6cbb; /* Soft Purple */
+    font-weight: 500;
+    margin-top: 15px;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #e1c6f0; /* Soft Purple */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .social a {
+    margin-right: 20px;
+    font-size: 1.8rem;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+footer .social a:hover {
+    color: #f4c6da; /* Soft Pink */
+}
+
+footer .copyright {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    header .logo {
+        font-size: 1.5rem;
+    }
+
+    header .navbar {
+        display: none; /* Hide navbar on mobile */
+    }
+
+    header .top-btn {
+        display: none; /* Hide top button on mobile */
+    }
+
+    .portofolio .portofolio-content {
+        grid-template-columns: 1fr;
+    }
+
+    footer .social a {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .portofolio h4 {
+        font-size: 1.3rem;
+    }
+
+    footer .copyright {
+        font-size: 0.9rem;
+    }
+}
